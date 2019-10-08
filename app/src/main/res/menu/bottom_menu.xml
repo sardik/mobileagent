@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/bottom_pickup"
+            android:icon="@mipmap/atex_ic_pickup"
+            android:title="HOME" />
+    <item
+            android:id="@+id/bottom_register"
+            android:icon="@mipmap/atex_ic_register"
+            android:title="DAFTAR" />
+    <item
+            android:id="@+id/bottom_booking"
+            android:icon="@mipmap/atex_ic_booking"
+            android:title="BOOKING KIRIMAN" />
+    <item
+            android:id="@+id/bottom_droppoint"
+            android:icon="@mipmap/atex_ic_droppoint"
+            android:title="DROPPOINT" />
+    <item
+            android:id="@+id/bottom_riwayat_transaksi"
+            android:icon="@mipmap/atex_ic_riwayattransaksi"
+            android:title="RIWAYAT" />
+</menu>

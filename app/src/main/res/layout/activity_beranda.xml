@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    android:background="@color/white_dark"
+    tools:context="com.amtesting.mobileagentatex.beranda">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amtesting.mobileagentatex.beranda" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="16dp"
+        android:textColor="@color/darkorange"/>
+    <!--<android.support.v7.widget.AppCompatButton-->
+        <!--android:id="@+id/btn_go_to"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:paddingTop="15dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/round_button"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="8dp"-->
+        <!--android:drawableTop="@android:drawable/ic_dialog_map"-->
+        <!--android:text="Menuju Lokasi"/>-->
+    </FrameLayout>

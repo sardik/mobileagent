@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="4dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_account_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2.5dp">
+
+        <ImageView
+            android:id="@+id/bck_grnd_riwayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/bck_grnd_riwayat"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tanggal_transaksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/jam_transaksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jam"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"/>
+
+                <TextView
+                    android:id="@+id/nominal_setor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nominal Setor"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/val_tanggal_transaksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YYYY-MM-DD"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/val_jam_transaksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HH:MM:SS"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"/>
+
+                <TextView
+                    android:id="@+id/val_nominal_setor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0000,00"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,460 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_dark"
+    tools:context="com.amtesting.mobileagentatex.Booking.summarypengiriman">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/step_summary_pengiriman"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="5dp">
+
+            <!--detail pengirim-->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_detail_pengirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardBackgroundColor="@color/background_material_light"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2.5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+            <TextView
+                android:id="@+id/tv_detail_pengirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Detail Pengirim"
+                android:drawableLeft="@mipmap/ic_small_pengirim"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_marginTop="25dp"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/titel_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Nama"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_nama_pengirim"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:text="Nama Pengirim"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_marginTop="25dp"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/titel_handphone_pengirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="No Handphone"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_handphone_pengirim"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:text="Handphone Pengirim"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_marginTop="25dp"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/titel_lokasi_pengirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Lokasi"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_lokasi_pengirim"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical|right"
+                android:text="CIJERUK, KABUPATEN BOGOR, MAKAM MBAH PRIOK"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+            <!--detail penerima -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_detail_penerima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardBackgroundColor="@color/background_material_light"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2.5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+            <TextView
+                android:id="@+id/tv_detail_penerima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Detail Penerima"
+                android:drawableLeft="@mipmap/ic_small_penerima"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_nama_penerima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Nama"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_nama_penerima"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:text="Nama Pengirim"
+                    android:gravity="center_vertical|right"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_alamat_penerima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Alamat"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_alamat_penerima"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="CIJERUK, KABUPATEN BOGOR, MAKAM MBAH PRIOK"
+                    android:gravity="center_vertical|right"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_handphone_penerima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="No Handphone"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_handphone_penerima"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:text="Handphone Pengirim"
+                    android:gravity="center_vertical|right"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_kota_penerima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Kota"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_kota_penerima"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical|right"
+                    android:text="BOGOR"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_kecamatan_penerima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Kecamatan"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_kecamatan_penerima"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical|right"
+                    android:text="CIJERUK"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+            <!--detail paket-->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_detail_paket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardBackgroundColor="@color/background_material_light"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2.5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+            <TextView
+                android:id="@+id/tv_detail_paket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Detail Paket"
+                android:drawableLeft="@mipmap/ic_small_paket"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_isipaket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Isi Paket"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_isi_paket"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Undangan"
+                    android:gravity="center_vertical|right"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_dimensipaket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Dimensi Paket (cm)"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_dimensi_paket"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:text="axaxa"
+                    android:gravity="center_vertical|right"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_total_berat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Berat Paket"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_total_berat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical|right"
+                    android:text="5"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_asuransi_paket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Asuransi Paket"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_asuransi_paket"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical|right"
+                    android:text="Tidak"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="75dp">
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/state_button_back"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginBottom="75dp"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lanjut"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="75dp"
+                    android:background="@drawable/state_button_next"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

@@ -1,0 +1,550 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_dark"
+    tools:context="com.amtesting.mobileagentatex.Booking.booking">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/step_booking_paket"/>
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="5dp">
+
+            <!--data pelanggan-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cv_kurir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            card_view:cardBackgroundColor="@color/background_material_light"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2.5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/id_pelanggan_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="ID Pelanggan"
+                android:textColor="#000"
+                android:textSize="19dp" />
+            <!--  Name Label -->
+
+            <EditText
+                android:id="@+id/tf_email_pelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edittext_box"
+                android:hint="xxx@mail.com"
+                android:inputType="textNoSuggestions"
+                android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="5dp">
+            <CheckBox android:id="@+id/checkbox_idkurir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Kurir"
+                android:textColor="#84827e"
+                android:textSize="16dp"/>
+            <EditText
+                android:id="@+id/tf_nama_kurir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="nama"
+                android:inputType="textNoSuggestions"
+                android:layout_marginLeft="5dp" />
+            </LinearLayout>
+            <CheckBox android:id="@+id/checkbox_id_pelanggan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpan Kontak Pelanggan"
+                android:textColor="#84827e"
+                android:textSize="15dp"/>
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray" />
+
+            <!--data pengirim-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_pengirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardBackgroundColor="@color/background_material_light"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="2.5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+                <TextView
+                    android:id="@+id/tv_alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Detail Pengirim"
+                    android:textColor="#000"
+                    android:textSize="19dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="25dp"
+                    android:weightSum="1">
+                <TextView
+                    android:id="@+id/titel_alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Alamat   "
+                    android:textSize="16dp" />
+
+                    <Spinner
+                    android:id="@+id/alamat_pengirim_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:text="Nama"
+                    android:textColor="#fefefe"
+                    android:textSize="22dp"
+                    android:background="@android:drawable/btn_dropdown" />
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/expand_alamat_pengirim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="35dp"
+                        android:text="+ ALAMAT PENGIRIM"
+                        android:textColor="@color/darkorange"
+                        android:textSize="18dp"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="40dp"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/title_nama_pengirim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Nama     "
+                            android:textSize="16dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/tf_nama_pengirim"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="nama"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/edittext_box"
+                            android:inputType="textNoSuggestions"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="50dp"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/title_handphone_pengirim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Telepon  "
+                            android:textSize="16dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/tf_handphone_pengirim"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Telepon"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/edittext_box"
+                            android:inputType="textNoSuggestions"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="50dp"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/title_kota_pengirim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Kota     "
+                        android:textSize="16dp"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/tf_kota_pengirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Kota"
+                        android:inputType="textNoSuggestions"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="60dp"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/title_kecamatan_pengirim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Kecamatan"
+                            android:textSize="16dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/tf_kecamatan_pengirim"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Kecamatan"
+                            android:inputType="textNoSuggestions"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <CheckBox android:id="@+id/checkbox_id_pengirim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Simpan sebagai Alamat Pengirim"
+                        android:textColor="#84827e"
+                        android:textSize="15dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray" />
+
+            <!--data penerima -->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_penerima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardBackgroundColor="@color/background_material_light"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="2.5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:id="@+id/tv_alamat_penerima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Detail Penerima"
+                        android:textColor="#000"
+                        android:textSize="19dp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="25dp"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/titel_alamat_penerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Alamat  "
+                            android:textSize="16dp" />
+
+                        <Spinner
+                            android:id="@+id/alamat_penerima_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:text="Nama"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="10dp"
+                            android:textColor="#fefefe"
+                            android:textSize="16dp"
+                            android:background="@android:drawable/btn_dropdown"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/expand_alamat_penerima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="35dp"
+                        android:text="+ ALAMAT PENERIMA"
+                        android:textColor="@color/darkorange"
+                        android:textSize="17dp"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="40dp"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/title_nama_penerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Nama     "
+                            android:textSize="16dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/tf_nama_penerima"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="nama"
+                            android:background="@drawable/edittext_box"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:inputType="textNoSuggestions"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="50dp"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/title_handphone_penerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Telepon  "
+                            android:textSize="16dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/tf_handphone_penerima"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:hint="Telepon"
+                            android:background="@drawable/edittext_box"
+                            android:inputType="textNoSuggestions"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="50dp"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/title_kota_penerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Kota     "
+                            android:textSize="16dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/tf_kota_penerima"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Kota"
+                            android:inputType="textNoSuggestions"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="60dp"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/title_kecamatan_penerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Kecamatan"
+                            android:textSize="16dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/tf_kecamatan_penerima"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Kecamatan"
+                            android:inputType="textNoSuggestions"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="70dp"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/title_alamat_penerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Alamat   "
+                            android:textSize="16dp"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/tf_alamat_penerima"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:hint="Alamat"
+                            android:inputType="textMultiLine"
+                            android:layout_marginLeft="5dp"
+                            android:lines="8"
+                            android:minLines="6"
+                            android:gravity="top|left"
+                            android:maxLines="10"
+                            android:scrollbars="vertical"
+                            android:background="@drawable/edittext_box"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <CheckBox android:id="@+id/checkbox_id_penerima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Simpan sebagai Alamat Pengirim"
+                        android:textColor="#84827e"
+                        android:textSize="15dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="75dp">
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/state_button_back"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginBottom="75dp"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lanjut"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="75dp"
+                    android:background="@drawable/state_button_next"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

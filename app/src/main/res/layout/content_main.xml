@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.amtesting.mobileagentatex.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/btm_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/state_list"
+        app:itemTextColor="@drawable/state_list"
+        app:menu="@menu/bottom_menu" />
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_bottom_register"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@mipmap/atex_icn_user"-->
+            <!--android:layout_margin="8dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_bottom_booking"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@mipmap/atex_icn_booking"-->
+            <!--android:layout_margin="8dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_bottom_pickup"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@mipmap/atex_icn_pick_up"-->
+            <!--android:layout_margin="8dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_bottom_droppoint"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@mipmap/atex_icn_drop_point"-->
+            <!--android:layout_margin="8dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_bottom_riwayat_transaksi"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@mipmap/atex_icn_transaction_history"-->
+            <!--android:layout_margin="8dp" />-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

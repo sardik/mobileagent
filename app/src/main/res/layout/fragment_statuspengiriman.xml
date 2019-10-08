@@ -1,0 +1,188 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_dark"
+    tools:context="com.amtesting.mobileagentatex.Booking.statuspengiriman">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="5dp">
+
+    <!--data pelanggan-->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_status_pengiriman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardBackgroundColor="@color/background_material_light"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2.5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/title_selamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Selamat"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="19dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp">
+
+        <TextView
+            android:id="@+id/title_berhasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Transaksi Anda Berhasil"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="19dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="80dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@mipmap/img_true"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="160dp">
+
+        <TextView
+            android:id="@+id/title_totalbiaya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Total Biaya"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="19dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="180dp">
+
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Rp. 5000"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="220dp">
+
+        <TextView
+            android:id="@+id/title_nobooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Nomor booking"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="19dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="240dp">
+
+        <TextView
+            android:id="@+id/tv_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1121122111112"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="320dp">
+
+        <TextView
+            android:id="@+id/tv_pessan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Gunakan nomor AirWayBill diatas untuk melakukan Track &amp; Trace paket yang Anda kirimkan. Track &amp; Trace dapat dilakukan via online melalui ATEX Mobile Apps
+            dan website Atri Xpress di www.atex.co.id"
+            android:gravity="center"
+            android:textColor="@color/darksilver"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="75dp">
+            <Button
+                android:id="@+id/btn_pengiriman_baru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengiriman Baru"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="75dp"
+                android:background="@drawable/state_button_next"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
